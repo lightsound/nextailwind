@@ -19,12 +19,19 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "4.0.0-alpha.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "prettier": "^3.2.5",
+    "tailwindcss": "4.0.0-alpha.10",
     "typescript": "^5"
+  },
+  "postcss": {
+    "plugins": {
+      "@tailwindcss/postcss": {}
+    }
   }
 }

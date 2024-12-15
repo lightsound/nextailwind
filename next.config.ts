@@ -1,5 +1,10 @@
-import { NextConfig } from "next";
+import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {};
-
-export default nextConfig;
+export default {
+  experimental: {
+    ppr: true,
+    dynamicIO: true,
+    reactCompiler: true,
+    authInterrupts: true,
+  },
+} satisfies NextConfig;

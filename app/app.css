@@ -1,1 +1,120 @@
 @import "tailwindcss";
+
+/*
+ * #1-a テーマの設定
+ * ＠theme はTailwind CSS独自のディレクティブ
+ * namespace一覧: https://tailwindcss.com/docs/v4-beta#namespace-reference
+ */
+/* @theme {
+  --text-2xs: 10px;
+  --color-foo-100: oklch(0.99 0 0);
+} */
+
+/*
+ * #1-b テーマの無効化
+ */
+/* @theme {
+  --color-*: initial;
+} */
+
+/*
+ * #1-c テーマの一括無効化
+ */
+/* @theme {
+  --*: initial;
+} */
+
+/*
+ * #2 ネイティブカスケードレイヤー
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/@layer
+ */
+/* コードは特になし */
+
+/*
+ * #3 自動ソース検出
+ */
+/* コードは特になし */
+
+/*
+ * #4 Arbitrary values の無限化
+ */
+/* <div class="z-2024">hello</div> */
+
+/*
+ * #5 data属性の省略
+ */
+/* <div class="data-selected:hidden" data-selected>hello</div> */
+
+/*
+ * #6-a スケールのデフォルト値設定
+ */
+/* @theme {
+  --spacing: 0.25rem;
+} */
+
+/*
+ * #6-b 個別のスケールの上書き
+ */
+/* @theme {
+  --spacing-1: 10rem;
+} */
+
+/*
+ * #7 コンテナクエリ
+ */
+/* <div class="@container w-100 outline">
+ <div class="@sm:text-red-500 @md:text-blue-500">hoge</div>
+</div> */
+
+/*
+ * #8 テキストエリアの高さ自動設定
+ */
+/* <textarea class="field-sizing-content w-1/2 outline"></textarea> */
+
+/*
+ * #9 可変フォント用の font-stretch ユーティリティ
+ */
+/* <div class="font-stretch-extra-expanded">foo bar baz</div> */
+
+/*
+ * #10 バリアントの連携
+ */
+/* <div class="group *:size-50 *:bg-blue-500">
+ <div class="group-has-data-potato:bg-red-500"></div>
+ <div data-potato></div>
+</div> */
+
+/*
+ * #11 `in-*` バリアント
+ */
+/* <div class="*:size-50 *:bg-blue-500">
+ <div class="in-has-data-potato:bg-red-500"></div>
+ <div data-potato></div>
+</div> */
+
+/*
+ * #12 `nth-*` バリアント
+ */
+/* <div class="nth-3:underline">…</div>
+<div class="nth-last-5:underline">…</div>
+<div class="nth-of-type-4:underline">…</div>
+<div class="nth-last-of-type-6:underline">…</div> */
+
+/*
+ * #13 Descendant バリアント
+ */
+/* <div class="**:rounded-full">
+ <div class="grid size-40 place-items-center bg-green-300">
+   <div class="size-20 bg-green-500"></div>
+ </div>
+</div> */
+
+/*
+ * #14 プラグインの使用
+ */
+/* @plugin "@tailwindcss/typography"; */
+
+/*
+ * #15 JS設定ファイルの使用
+ */
+/* @config "YOUR_PATH/tailwind.config.js"; */

@@ -5,5 +5,11 @@
   "editor.quickSuggestions": { "strings": true },
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["nextailwind", "Stylesheet", "tailwindcss", "vercel"]
+  "cSpell.words": [
+    "nextailwind",
+    "oklch",
+    "Stylesheet",
+    "tailwindcss",
+    "vercel"
+  ]
 }
